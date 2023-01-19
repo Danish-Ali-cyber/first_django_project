@@ -1,0 +1,284 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hostel Mess Menu</title>
+        <link rel="stylesheet" type="text/css" href="{%static 'css/style5.css'%}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="{% static 'images/img1.jpg' %}" sizes="32x32">
+
+    </head>
+    <body>
+        <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="{% url 'dashboard'%}"><i class="fa fa-home" ></i>Home</a></li>
+                <li class=""><a href="#"><i class=""></i>Sunday</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-coffee"></i>Breakfast</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                            <ul>
+                                <li><a href="#">Choley</li>
+                                <li><a href="#">Bhaturey</li>
+                                <li><a href="#">Tea</li>
+                            </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Lunch</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                            <ul>
+                                <li><a href="#">Boondi Raita</li>
+                                <li><a href="#">Fried Rice</li>
+                                <li><a href="#">Choley</li>
+                            
+                            </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-cutlery"></i>Dinner</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                            <ul>
+                                <li><a href="#">Chili Paneer</li>
+                                <li><a href="#">Roti</li>
+                                <li><a href="#">Rice</li>
+                                <li><a href="#">Aloo Gobhi</li>
+                                <li><a href="#">Green Salad</li>
+                                <li><a href="#">Papad</li>
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Monday</a>
+                <div class="sub-menu-2">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-coffee"></i>Breakfast</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Tea</li>
+                                    <li><a href="#">Bread Roll</li>
+                                    <li><a href="#">Tomato Ketchup</a></li>
+                                   
+                                    
+                                </ul>
+
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Lunch</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                            <ul>
+                                <li><a href="#">Rajma Masala</li>
+                                <li><a href="#">Rice</li>
+                                <li><a href="#">Green Salad</li>
+                                <li><a href="#">Roti</li>
+                                <li><a href="#">Mix Veg</li>
+                              
+                            </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-cutlery"></i>Dinner</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                            <ul>
+                                <li><a href="#">Milk</li>
+                                <li><a href="#">Roti</li>
+                                <li><a href="#">Poori</li>
+                                <li><a href="#">Fried Rice</li>
+                                <li><a href="#">Subji</li>
+                                <li><a href="#">Achar</li>
+                                
+                            
+                            </ul>
+                            </div>
+                        </li>
+                    </ul>
+            </li>
+            <li><a href="#">Tuesday</a>
+                <div class="sub-menu-3">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-coffee"></i>Breakfast</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Tea</li>
+                                    <li><a href="#">Bhaaji</li>
+                                    <li><a href="#">Pav</li>
+                                    <li><a href="#">Butter</li>
+                                    <li><a href="#">Onion Salad</li>
+                                </ul>
+                            
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Lunch</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Aloo Began</li>
+                                    <li><a href="#">Dal Makhni</li>
+                                    <li><a href="#">Green Salad</li>
+                                </ul>
+                            
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-cutlery"></i>Dinner</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Loki Chana</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">Dal</li>
+                                    <li><a href="#">Green Salad</li>
+                                </ul>
+                            
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Wednesday</a>
+                <div class="sub-menu-4">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-coffee"></i>Breakfast</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Tea</li>
+                                    <li><a href="#">Kachori</li>
+                                    <li><a href="#">Aloo Subji</li>
+                                    <li><a href="#">Curd</li>
+                                    <li><a href="#">Jalebi</li>
+                                </ul>
+                            
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Lunch</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Dhahi Bada</li>
+                                    <li><a href="#">Choley</li>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Mix Veg</li>
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-cutlery"></i>Dinner</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Curd</li>
+                                    <li><a href="#">Paratha</li>
+                                    <li><a href="#">Fried Rice</li>
+                                    <li><a href="#">Green Salad</li>
+                                    
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Thursday</a>
+                <div class="sub-menu-5">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-coffee"></i>Breakfast</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Tea</li>
+                                    <li><a href="#">Choley</li>
+                                    <li><a href="#">Kulche</li>
+                                    <li><a href="#">Salad</li>
+                                    
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Lunch</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Veg Raita</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">Curry</li>
+                                    <li><a href="#">Green Salad</li>
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-cutlery"></i>Dinner</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Milk</li>
+                                    <li><a href="#">Papad</li>
+                                    <li><a href="#">Dum Aloo</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Rice</li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Friday</a>
+                <div class="sub-menu-6">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-coffee"></i>Breakfast</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Tea</li>
+                                    <li><a href="#">Poori</li>
+                                    <li><a href="#">Aloo Tamater</li>
+                                   
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Lunch</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Green Salad</li>
+                                    <li><a href="#">Fried Mirchi</li>
+                                    <li><a href="#">Dal</li>
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-cutlery"></i>Dinner</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Milk</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">Dal Makhni</li>
+                                    <li><a href="#">Choley</li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Saturday</a>
+                <div class="sub-menu-7">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-coffee"></i>Breakfast</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Tea</li>
+                                    <li><a href="#">Poha</li>
+                                    
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Lunch</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Green Salad</li>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Aloo Shimla Mirch</li>
+                                    <li><a href="#">Mix Dal</li>
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}"><i class="fa fa-cutlery"></i>Dinner</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-11">
+                                <ul>
+                                    <li><a href="#">Milk</li>
+                                    <li><a href="#">Roti</li>
+                                    <li><a href="#">Sabji</li>
+                                    <li><a href="#">Rice</li>
+                                    <li><a href="#">salad</li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="{% url 'feedback'%}"><i class="fa fa-comment"></i>Feedback</a></i></li>
+        </ul>
+        </div>
+    </body>
+</html>
