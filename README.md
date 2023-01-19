@@ -1,2 +1,5 @@
 # first_django_project
 djang conflict management system
+
+
+Conflict Management System is a web-based application that is designed to make the process of resolving complaints(conflict) made by students in the university environment easy. It can be used to deliver information faster without any redundancy. Using the software, the university management would be able to maintain an effective, timely and equitable complaints handling system that is easily accessible by the students. Internal Conflict (complaints) Management System in the university helps to resolve a lot of problems or issue like mess, library, hostel, academy, etc for a university growth. This project identifies a range of options that can be used to manage university complaints. If a student feels uncomfortable about having their Complaint with informally, or has not been able to resolve it informally, they can choose to have their complaint with formally using this internal conflict management system. All formal complaints must be made by the student, their authorised representative.
