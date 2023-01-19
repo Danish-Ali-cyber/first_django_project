@@ -1,4 +1,4 @@
-window.sk=window.sk||function(){(sk.q=sk.q||[]).push(arguments)};
+window.sk = window.sk || function () { (sk.q = sk.q || []).push(arguments) };
 
 (() => {
 	const icons = {

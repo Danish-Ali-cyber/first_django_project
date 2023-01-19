@@ -1,6 +1,7 @@
 :root {
 	--main-color: #3273dc;
-	--main-color-rgb: 50, 115, 220; /* Same as above but stored as a pure color values */
+	--main-color-rgb: 50, 115, 220;
+	/* Same as above but stored as a pure color values */
 }
 
 body {
@@ -35,7 +36,7 @@ a {
 	margin-right: auto;
 }
 
-.hero-body > .container {
+.hero-body>.container {
 	margin-bottom: 100px;
 }
 
@@ -89,6 +90,7 @@ p {
 	opacity: 0;
 	transition: 0.8s ease-in-out;
 }
+
 #nav-container.visible {
 	opacity: 1;
 }

@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     user-select: none;
     color: white;
     box-sizing: border-box;
     font-family: Jost', sans-serif;
+
 }
 
-header{
+header {
     position: fixed;
     background: #000000;
     padding: 20px;
@@ -17,7 +19,7 @@ header{
 }
 
 
-.logout_btn{
+.logout_btn {
     padding: 5px;
     background: #004d4d;
     text-decoration: none;
@@ -32,11 +34,11 @@ header{
     transition-property: background;
 }
 
-.logout_btn:hover{
+.logout_btn:hover {
     background: #008080;
 }
 
-.feedback_btn{
+.feedback_btn {
     padding: 7px;
     background: #004d4d;
     text-decoration: none;
@@ -51,38 +53,40 @@ header{
 
 }
 
-.container{
-    transform: translate(8.7rem,14rem);
+.container {
+    transform: translate(8.7rem, 14rem);
 }
-@media screen and (max-width:868px){
-    .container{
-        transform: translate(2.5rem,3rem);
+
+@media screen and (max-width:868px) {
+    .container {
+        transform: translate(2.5rem, 3rem);
     }
-    .card{
-        transform: translate(18rem,4rem);
+
+    .card {
+        transform: translate(18rem, 4rem);
         margin-bottom: 0.3rem;
     }
 
 }
-@media screen and (max-width:768px){
-    .card{
-        transform: translate(1.5rem,3rem);
+
+@media screen and (max-width:768px) {
+    .card {
+        transform: translate(1.5rem, 3rem);
         margin-bottom: 0.3rem;
     }
 }
 
 
 
-.sidebar{
+.sidebar {
     position: fixed;
     width: 250px;
     height: 100%;
     left: 0;
     background: #008080
-
 }
 
-.sidebar .text{
+.sidebar .text {
     color: white;
     font-size: 25px;
     font-weight: 600;
@@ -94,19 +98,19 @@ header{
 
 }
 
-nav ul{
+nav ul {
     background: #008080;
     height: 100%;
     width: 100%;
     list-style: none;
 }
 
-nav ul li{
+nav ul li {
     line-height: 60px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-nav ul li a{
+nav ul li a {
     position: relative;
     color: white;
     text-decoration: none;
@@ -118,35 +122,35 @@ nav ul li a{
     border-left: 3px solid transparent:
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: cyan;
     background: #008080;
 
 }
 
-nav ul ul{
+nav ul ul {
     position: static;
 
 
 }
 
-nav ul .prof-show.show{
+nav ul .prof-show.show {
     display: block;
 }
 
-nav ul ul li{
+nav ul ul li {
     line-height: 42px;
     border-bottom: none;
 }
 
-nav ul ul li a{
+nav ul ul li a {
     font-size: 17px;
     color: #e6e6e6;
     padding-left: 80px;
 
 }
 
-nav ul ul li a span{
+nav ul ul li a span {
     position: absolute;
     top: 50%;
     right: 20px;
@@ -155,7 +159,6 @@ nav ul ul li a span{
     transition: transform 0.4s;
 }
 
-nav ul ul li a:hover span{
+nav ul ul li a:hover span {
     transform: translatey(-50%) rotate(-180deg);
 }
-

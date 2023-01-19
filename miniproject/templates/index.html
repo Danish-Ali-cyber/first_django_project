@@ -3,27 +3,30 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="{% static  'css/style1.css' %}">
 	<link rel="icon" href="{% static 'images/img1.jpg' %}" sizes="32x32">
 </head>
+
 <body>
 	<div class="wrapper">
-			<nav class="navbar">
-				<img src="{% static 'images/glalogo.jpg' %}" height="90" width="300" />
-				<ul>
-					<li><a class="active" href="{% url 'index'%}">Home</a></li>
-					<li><a href="{% url 'complaint'%}">Complaints</a></li>
-					
-					<li><a href="{% url 'feedback'%}">Feedback</a></li>
-				</ul>
-			</nav>
-			<div class="center">
+		<nav class="navbar">
+			<img src="{% static 'images/glalogo.jpg' %}" height="90" width="300" />
+			<ul>
+				<li><a class="active" href="{% url 'index'%}">Home</a></li>
+				<li><a href="{% url 'complaint'%}">Complaints</a></li>
+
+				<li><a href="{% url 'feedback'%}">Feedback</a></li>
+			</ul>
+		</nav>
+		<div class="center">
 			<h1>Welcome To GLA University Administration Building Services</h1>
 			<div class="buttons">
-		</div>
+			</div>
 		</div>
 </body>
+
 </html>

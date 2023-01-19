@@ -1,77 +1,81 @@
 {% load static %}
-  
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Feedback</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-		<link rel="stylesheet" type="text/css" href="{%static 'css/style7.css'%}">
-		<link rel="icon" href="{% static 'images/img1.jpg' %}" sizes="32x32">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-		<script defer src="https://js.statickit.com/statickit.js"></script>
-		<script defer src="{%static 'js/style7.js'%}"></script>
-		<!-- Google Analytics -->
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-25562592-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script defer src="https://www.google-analytics.com/analytics.js"></script>
-		<!-- / Google Analytics -->
-	</head>
-	<body>
-		<div id="nav-container"></div>
-		<section class="hero is-fullheight">
-			<div class="hero-body">
-				<div class="container">
-					<div class="columns is-vcentered">
-						<div id="main" class="column is-half is-centered has-nice-link">
-							
-							<h1 class="title is-2">Complaint</h1>
-							<h2 class="title is-6">I appreciate your Complaint </h2>
-							<div id="additional-info"></div>
-							<form id="feedback-form" method= 'POST'>
-								{% csrf_token %}
-								<div class="field">
-									<label class="label" for="name">Name</label>
-									<div class="control">
-										<input class="input is-medium" type="text" name="name">
-									</div>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Feedback</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/style7.css'%}">
+	<link rel="icon" href="{% static 'images/img1.jpg' %}" sizes="32x32">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+	<script defer src="https://js.statickit.com/statickit.js"></script>
+	<script defer src="{%static 'js/style7.js'%}"></script>
+	<!-- Google Analytics -->
+	<script>
+		window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+		ga('create', 'UA-25562592-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script defer src="https://www.google-analytics.com/analytics.js"></script>
+	<!-- / Google Analytics -->
+</head>
+
+<body>
+	<div id="nav-container"></div>
+	<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div id="main" class="column is-half is-centered has-nice-link">
+
+						<h1 class="title is-2">Complaint</h1>
+						<h2 class="title is-6">I appreciate your Complaint </h2>
+						<div id="additional-info"></div>
+						<form id="feedback-form" method='POST'>
+							{% csrf_token %}
+							<div class="field">
+								<label class="label" for="name">Name</label>
+								<div class="control">
+									<input class="input is-medium" type="text" name="name">
 								</div>
-								<div class="field">
-									<label class="label" for="email">Email*</label>
-									<div class="control">
-										<input class="input is-medium" type="email" name="email" required>
-									</div>
-									<div data-sk-error="email"></div>
+							</div>
+							<div class="field">
+								<label class="label" for="email">Email*</label>
+								<div class="control">
+									<input class="input is-medium" type="email" name="email" required>
 								</div>
-								<div class="field">
-									<label class="label" for="message">Complaint name</label>
-									<div class="control">
-										<input class="input is-medium" type="text" name="Complaint type">
-									</div>
-									<div data-sk-error="message"></div>
+								<div data-sk-error="email"></div>
+							</div>
+							<div class="field">
+								<label class="label" for="message">Complaint name</label>
+								<div class="control">
+									<input class="input is-medium" type="text" name="Complaint type">
 								</div>
-								<div class="field">
-									<label class="label" for="message">Message*</label>
-									<div class="control">
-										<textarea class="textarea is-medium" placeholder="Complaint" name="message" minlength="20" rows="7" required autofocus></textarea>
-									</div>
-									<div data-sk-error="message"></div>
+								<div data-sk-error="message"></div>
+							</div>
+							<div class="field">
+								<label class="label" for="message">Message*</label>
+								<div class="control">
+									<textarea class="textarea is-medium" placeholder="Complaint" name="message"
+										minlength="20" rows="7" required autofocus></textarea>
 								</div>
-								<div class="field">
-									<div class="control">
-										<button class="button is-large is-primary is-info" type="submit">Send Complaint</button>
-									</div>
+								<div data-sk-error="message"></div>
+							</div>
+							<div class="field">
+								<div class="control">
+									<button class="button is-large is-primary is-info" type="submit">Send
+										Complaint</button>
 								</div>
-							</form>
-						</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
-		</section>
-	</body>
-</html>
+		</div>
+	</section>
+</body>
 
+</html>

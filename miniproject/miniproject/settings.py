@@ -56,7 +56,7 @@ ROOT_URLCONF = 'miniproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/ "templates"],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'miniproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'miniproject',
-        'USER':'postgres',
-        'PASSWORD':'1234',
-        'HOST':'localhost',
+        'NAME': 'miniproject',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
     }
 }
 
@@ -132,7 +132,6 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
-STATICFILES_DIRS=[
-        BASE_DIR / "static"
+STATICFILES_DIRS = [
+    BASE_DIR / "static"
 ]
-

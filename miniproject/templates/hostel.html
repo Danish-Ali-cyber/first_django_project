@@ -1,240 +1,259 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hostel complaint</title>
-        <link rel="stylesheet" type="text/css" href="{%static 'css/style4.css'%}">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="{% static 'images/img1.jpg' %}" sizes="32x32">
 
-    </head>
-    <body>
-        <div class="menu-bar">
+<head>
+    <title>Hostel complaint</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'css/style4.css'%}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{% static 'images/img1.jpg' %}" sizes="32x32">
+
+</head>
+
+<body>
+    <div class="menu-bar">
         <ul>
-            <li class="active"><a href="{% url 'dashboard'%}"><i class="fa fa-home" ></i>Home</a></li>
-            <li><a href="#"><i class="fa fa-bed" ></i> Girl's Hostel</a>
-                   <div class="sub-menu-1">
-                       <ul>
-                           <li class="hover-me"><a href="{% url 'complaintform1'%}">Ganga hostel</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-            
-                        
-                        
-                        
-                        
-                        </li>
-                           <li class="hover-me"><a href="{% url 'complaintform1'%}">Yammunahostel</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-                             </li>
-                           <li class="hover-me"><a href="{% url 'complaintform1'%}">KC hostel</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-                            </li>
-                           <li class="hover-me"><a href="{% url 'complaintform1'%}">Godavarihostel</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-                           </li>
-                       </ul>
-                   </div>
-             </li>
-            <li><a href="#"><i class="fa fa-bed"></i>Boy's Hostel(Non-ac)</a>
+            <li class="active"><a href="{% url 'dashboard'%}"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-bed"></i> Girl's Hostel</a>
                 <div class="sub-menu-1">
                     <ul>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block A</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">electricity</a></li>
-                                <li><a href="#">civil</a></li>
-                                <li><a href="#">LAN wire</a></li>
-                                <li><a href="#">others</a></li>
-                                
-                            </ul>
-                        </div>
-                    </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block B</a><i class="fa fa-angle-right"></i>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Ganga hostel</a><i
+                                class="fa fa-angle-right"></i>
                             <div class="sub-menu-2">
                                 <ul>
                                     <li><a href="#">electricity</a></li>
                                     <li><a href="#">civil</a></li>
                                     <li><a href="#">LAN wire</a></li>
                                     <li><a href="#">others</a></li>
-                                    
+
                                 </ul>
                             </div>
-                         </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block C</a><i class="fa fa-angle-right"></i>
+
+
+
+
+
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Yammunahostel</a><i
+                                class="fa fa-angle-right"></i>
                             <div class="sub-menu-2">
                                 <ul>
                                     <li><a href="#">electricity</a></li>
                                     <li><a href="#">civil</a></li>
                                     <li><a href="#">LAN wire</a></li>
                                     <li><a href="#">others</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block D</a><i class="fa fa-angle-right"></i>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">KC hostel</a><i
+                                class="fa fa-angle-right"></i>
                             <div class="sub-menu-2">
                                 <ul>
                                     <li><a href="#">electricity</a></li>
                                     <li><a href="#">civil</a></li>
                                     <li><a href="#">LAN wire</a></li>
                                     <li><a href="#">others</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block E</a><i class="fa fa-angle-right"></i>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Godavarihostel</a><i
+                                class="fa fa-angle-right"></i>
                             <div class="sub-menu-2">
                                 <ul>
                                     <li><a href="#">electricity</a></li>
                                     <li><a href="#">civil</a></li>
                                     <li><a href="#">LAN wire</a></li>
                                     <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block F</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block G</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block H</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                 </ul>
-                            </div>
-                        </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block I</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block J</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li><a href="#"><i class="fa fa-bed" ></i>Boy's Hostel(Ac)</a>
+            <li><a href="#"><i class="fa fa-bed"></i>Boy's Hostel(Non-ac)</a>
                 <div class="sub-menu-1">
                     <ul>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 1</a><i class="fa fa-angle-right"></i>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block A</a><i
+                                class="fa fa-angle-right"></i>
                             <div class="sub-menu-2">
                                 <ul>
                                     <li><a href="#">electricity</a></li>
                                     <li><a href="#">civil</a></li>
                                     <li><a href="#">LAN wire</a></li>
                                     <li><a href="#">others</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 2</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">electricity</a></li>
-                                <li><a href="#">civil</a></li>
-                                <li><a href="#">LAN wire</a></li>
-                                <li><a href="#">others</a></li>
-                                
-                            </ul>
-                        </div>
-                    </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 3</a><i class="fa fa-angle-right"></i>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block B</a><i
+                                class="fa fa-angle-right"></i>
                             <div class="sub-menu-2">
                                 <ul>
                                     <li><a href="#">electricity</a></li>
                                     <li><a href="#">civil</a></li>
                                     <li><a href="#">LAN wire</a></li>
                                     <li><a href="#">others</a></li>
-                                    
-                                </ul>
-                           </li>
-                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 4</a><i class="fa fa-angle-right"></i>
-                            <div class="sub-menu-2">
-                                <ul>
-                                    <li><a href="#">electricity</a></li>
-                                    <li><a href="#">civil</a></li>
-                                    <li><a href="#">LAN wire</a></li>
-                                    <li><a href="#">others</a></li>
-                                    
+
                                 </ul>
                             </div>
                         </li>
-                        
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block C</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block D</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block E</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block F</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block G</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block H</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block I</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">Block J</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-             </li>
+            </li>
+            <li><a href="#"><i class="fa fa-bed"></i>Boy's Hostel(Ac)</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 1</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 2</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 3</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                        </li>
+                        <li class="hover-me"><a href="{% url 'complaintform1'%}">wing 4</a><i
+                                class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">electricity</a></li>
+                                    <li><a href="#">civil</a></li>
+                                    <li><a href="#">LAN wire</a></li>
+                                    <li><a href="#">others</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
             <li><a href="{% url 'feedback'%}"><i class="fa fa-comment"></i>Feedback</a></li>
             <li><a href="#"><i class="fa fa-phone-square"></i>contact us</a></li>
         </ul>
-        </div>
-    </body>
-       
+    </div>
+</body>

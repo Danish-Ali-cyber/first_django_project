@@ -1,57 +1,69 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(/static/images/glauni.jpg);
     background-size: cover;
-   
+
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.menu-bar{
-    background: rgb(0,100,0);
+
+.menu-bar {
+    background: rgb(0, 100, 0);
     text-align: center;
 
 }
-.menu-bar ul{
+
+.menu-bar ul {
     display: inline-flex;
     list-style: none;
     color: #fff;
 }
-.menu-bar ul li{
+
+.menu-bar ul li {
     width: 120px;
     margin: 15px;
     padding: 15px;
 }
-.menu-bar ul li a{
+
+.menu-bar ul li a {
     text-decoration: none;
     color: #fff;
 }
-.active, .menu-bar ul li:hover{
+
+.active,
+.menu-bar ul li:hover {
     background: #2bab0d;
     border-radius: 3px;
 }
-.menu-bar .fa{
+
+.menu-bar .fa {
     margin-right: 8px;
 }
-.sub-menu-1{
+
+.sub-menu-1 {
     display: none;
 }
-.menu-bar ul li:hover .sub-menu-1{
+
+.menu-bar ul li:hover .sub-menu-1 {
     display: block;
     position: absolute;
-    background: rgb(0,100,0);
+    background: rgb(0, 100, 0);
     margin-top: 15px;
     margin-left: -15px;
 }
-.menu-bar ul li:hover .sub-menu-1 ul{
+
+.menu-bar ul li:hover .sub-menu-1 ul {
     display: block;
     margin: 10px;
 
 }
-.menu-bar ul li:hover .sub-menu-1 ul li{
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
     width: 150px;
     padding: 10px;
     border-bottom: 1px dotted #fff;
@@ -59,20 +71,19 @@ body{
     border-radius: 0;
     text-align: left;
 }
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
     border-bottom: none;
 }
-.sub-menu-2
-{
+
+.sub-menu-2 {
     display: none;
 }
-.hover-me:hover .sub-menu-2
-{
+
+.hover-me:hover .sub-menu-2 {
     position: absolute;
     display: block;
     margin-top: -40px;
     margin-left: 140px;
-    background: rgb(0,100,0);
+    background: rgb(0, 100, 0);
 }
-
-
